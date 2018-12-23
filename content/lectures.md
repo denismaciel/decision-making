@@ -1,5 +1,6 @@
 # Lectures
-# Lecture 1: Uncertainty and Preference
+
+## Lecture 1: Uncertainty and Preference
 
 Certainty Equivalent: $\alpha = CE(x)$. You are preference equivalent (indifferent) between outcome $\alpha$ and prospect x.
 
@@ -14,6 +15,15 @@ Monotoniciy in words: if prospect x under state s delivers a higher outcome than
 
 TO PROVE (s.23): taking as given that CE is additive under EV: $CE(x + y) = CE(x) + CE(y)$. Proof in PS1Ex4d.
 
+## Lecture 3: Risk versus Uncertainty
+
+A lottery is a prospect but with the additional information about the probabilities. 
+
+Multilple event-contingent events can yield the same lotttey:
+
+* you get $10 if one shows up on a die role
+* you get $10 if six shows up on a die role
+
 
 
 ## Lecture 4: Expected Utility under Risk
@@ -22,13 +32,16 @@ TO PROVE (s.23): taking as given that CE is additive under EV: $CE(x + y) = CE(x
 
 TODO: Show that we can normalize U(M) = 1 and U(m) = 0 if EU holds.
 
+
 Standard Gamble Solvability
 
 EU implies SG solvability (s.48)
+TODO: Show that EU implies Standard-Gamble solvability (slide 48).
 
 Standard Gamble Dominance
 
 EU implies SG dominance. SG dominance corresponds to monotonicity.
+TODO: show the above.
 
 Probabilistic Mixture
 
@@ -43,7 +56,8 @@ von Neumann-Morgenstern's EU representation theorem (Theorem 2.6.3): Under Struc
 
 This proof can be found in the book: Appendix 2.9, page 67.
 
-## Lecture 5
+s.53: Proof of von Neumann-Morgenstern's Theorem: Should I learn this proof by heart? Seems a little bit difficult. Maybe later try to tear it down into pieces and write each piece slowly on paper.
+## Lecture 5: Expected Utility and Stochastic Dominance
 
 Def: continuity of preference
 Def: independence of preference
@@ -51,7 +65,7 @@ Def: independence of preference
 Alternative formulation of EU aximos: Under Strucutral Assumption 2.5.2, the two statements are equivalent:
 
 - EU holds (but with U note necessarily strictly increasing)
-- $\succcurlyeq$ satisfies weak ordering, continuity and indepence.
+- $\succcurlyeq$ satisfies weak ordering, continuity and indepence
 
 First-order stochastic dominance
 
@@ -68,7 +82,7 @@ Equivalence of EU and stochastic dominance: under Structural Assumption 2.5.2, t
 - x first-order-stochastically dominates y
 - All EU-representable preferences prescribe $x \succcurlyeq y$ 
 
-It's an equivalence. If we know that x fos-dominates y, we can be sure that every person following EU (not matter what subjective probabilities she has) will pick x over y. Also, the other way around. If we know that every EU-following agent picks x over y (which is very unlikely to occur in practice, since we can hardly know that), we can be sure that x fos-dominates y. BUT knowing that EU implies stochastic dominance buys us the fact that we can restrict attention to all preferences that do not violate stochastic dominance.
+It's an equivalence. If we know that x fos-dominates y, we can be sure that every person following EU (doesn't matter which utility function she has) will pick x over y. Also, the other way around. If we know that every EU-following agent picks x over y (which is very unlikely to occur in practice, since we can hardly know that), we can be sure that x fos-dominates y. BUT knowing that EU implies stochastic dominance buys us the fact that we can restrict attention to all preferences that do not violate stochastic dominance. If it violates stochastic dominance, it cannot satisfy EU. 
 
 Assume EU and that neither x nor y stochastically dominates each other. Then we CANNOT rule out neither x is preferred to y nor y is preferred to x, i.e. both preferences can exist under EU.
 
@@ -77,11 +91,17 @@ Counterpositive: in order to prove A => B, we need only to prove its counterposi
 Statement: If something is a human, then it must be a mammal.
 Counterpositive: If something is not a mammal, then it cannot be a human being.
 
+## Lecture 6: Risk preferrence under expected utility
+
+Structural Assumption 3.0.1 ("Decision under Risk and EU"): $\succcurlyeq$ is a preference relation over the set of all probability-contingent prospects, which is the set of all finite probability distributions over the outcome set $\mathbb{R}$. Expected utility holds with a utility function U that is continuous and strictly increasing. 
+
 Risk aversion and concavity
 
-TOOD: Be able to draw Figure 3.2.1 (expected utility vs utility of expexted value).
+* risk aversion <-> U is concave
+* risk neutral <-> U is linear
+* risk seeking <-> U is convex
 
-Ris aversion and concavity
+TOOD: Be able to draw Figure 3.2.1 (expected utility vs utility of expexted value).
 
 Comparative risk aversion (4 ways of comparison)
 
@@ -108,5 +128,4 @@ Proposition (proof scibbled by me on slides): Under Structural Assumption 3.0.1 
 Decreasing Absolute Risk Aversion
 Constant Relative Risk Aversion
 
-## Lecture 7
 
